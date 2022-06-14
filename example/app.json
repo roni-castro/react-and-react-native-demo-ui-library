@@ -1,0 +1,22 @@
+{
+  "name": "react-and-react-native-demo-ui-library-example",
+  "displayName": "ReactAndReactNativeDemoUiLibrary Example",
+  "expo": {
+    "name": "react-and-react-native-demo-ui-library-example",
+    "slug": "react-and-react-native-demo-ui-library-example",
+    "description": "Example app for react-and-react-native-demo-ui-library",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
