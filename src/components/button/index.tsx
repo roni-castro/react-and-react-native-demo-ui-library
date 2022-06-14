@@ -1,7 +1,17 @@
 import React from 'react';
-import { Button as ButtonRN } from 'react-native';
+import { Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 import type { ButtonPropsInterface } from './props.interface';
 
-export function Button(props: ButtonPropsInterface) {
-  return <ButtonRN title={props.text} onPress={props.onClick} />;
+type NativeButtonProps = ButtonPropsInterface & TouchableOpacityProps;
+
+export function Button({ onClick, text, ...otherProps }: NativeButtonProps) {
+  return (
+    <TouchableOpacity
+      style={{ backgroundColor: 'orange', padding: 12 }}
+      onPress={onClick}
+      {...otherProps}
+    >
+      <Text>{text}</Text>
+    </TouchableOpacity>
+  );
 }
