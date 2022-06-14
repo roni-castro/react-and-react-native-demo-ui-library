@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "react-and-react-native-demo-ui-library": ["../src/index"]
+    },
+  },
+  "extends": "expo/tsconfig.base"
+}
