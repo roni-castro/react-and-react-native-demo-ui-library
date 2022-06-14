@@ -11,11 +11,11 @@ npm install react-and-react-native-demo-ui-library
 ## Usage
 
 ```js
-import { multiply } from "react-and-react-native-demo-ui-library";
+import { Button } from 'react-and-react-native-demo-ui-library';
 
 // ...
 
-const result = await multiply(3, 7);
+<Button text="Button" onClick={() => console.log('onClick')} />;
 ```
 
 ## Contributing
