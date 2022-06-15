@@ -1,6 +1,6 @@
 {
   "name": "react-and-react-native-demo-ui-library",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Demo lib with react and react-native components",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
