@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
           registry-url: https://npm.pkg.github.com
-          scope: react-and-react-native-demo-ui-library
+          scope: '@roni-castro'
       - run: yarn install
       - run: yarn prepare
       - run: yarn release
