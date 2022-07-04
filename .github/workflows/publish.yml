@@ -1,0 +1,29 @@
+name: Publish CI
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  quality:
+    uses: ./.github/workflows/quality.yml
+  publish:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+          registry-url: https://npm.pkg.github.com
+          scope: react-and-react-native-demo-ui-library
+      - run: yarn install
+      - run: yarn prepare
+      - run: npm publish
+        env:
+          GITHUB_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
