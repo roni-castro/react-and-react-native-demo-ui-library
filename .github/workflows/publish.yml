@@ -9,6 +9,7 @@ jobs:
     uses: ./.github/workflows/quality.yml
   publish:
     runs-on: ubuntu-latest
+    needs: [quality]
     strategy:
       matrix:
         node-version: [16.x]
@@ -24,6 +25,6 @@ jobs:
           scope: react-and-react-native-demo-ui-library
       - run: yarn install
       - run: yarn prepare
-      - run: npm publish
+      - run: yarn release
         env:
           GITHUB_AUTH_TOKEN: ${{secrets.PUBLISH_TOKEN}}
