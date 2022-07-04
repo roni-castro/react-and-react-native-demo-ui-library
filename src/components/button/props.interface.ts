@@ -1,4 +1,6 @@
+import type React from 'react';
+
 export interface ButtonPropsInterface {
-  text: string;
+  children?: React.ReactNode;
   onClick: () => void;
 }
