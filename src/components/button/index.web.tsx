@@ -1,13 +1,10 @@
 import React from 'react';
 import type { ButtonPropsInterface } from './props.interface';
 
-export function Button(props: ButtonPropsInterface) {
+export function Button({ children, ...restProps }: ButtonPropsInterface) {
   return (
-    <button
-      style={{ backgroundColor: 'blue', color: 'white' }}
-      onClick={props.onClick}
-    >
-      {props.text}
+    <button style={{ backgroundColor: 'blue', color: 'white' }} {...restProps}>
+      {children}
     </button>
   );
 }
