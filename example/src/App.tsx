@@ -5,7 +5,7 @@ import { View } from 'react-native';
 export default function App() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button text="Button" onClick={() => console.log('onClick')} />
+      <Button onClick={() => console.log('onClick')}>Button</Button>
       <Input placeholder="type here" />
     </View>
   );
