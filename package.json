@@ -1,8 +1,8 @@
 {
-  "name": "react-and-react-native-demo-ui-library",
+  "name": "@roni-castro/react-and-react-native-demo-ui-library",
   "version": "0.4.0",
   "description": "Demo lib with react and react-native components",
-  "repository": "git://github.com/roni-castro/react-and-react-native-demo-ui-library",
+  "repository": "https://github.com/roni-castro/react-and-react-native-demo-ui-library",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
