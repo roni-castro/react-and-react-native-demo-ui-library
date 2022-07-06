@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/roni-castro/react-and-react-native-demo-ui-library#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@roni-castro"
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
